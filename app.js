@@ -74,11 +74,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
-
+let sum=0;
 function sumArray(sumArr) { //eslint-disable-line
-
+for (let i=1; i<4;i++){
+    sum=sum+testArray[i];
 }
-
+let arry4=[testArray[0],testArray[1],testArray[2],'was passed in as an array of numbers, and '+sum+' is their sum.'];
+return arrt4;
+}
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
