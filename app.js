@@ -27,13 +27,12 @@ Write a function called multiply() that takes in two numbers as arguments and re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
-// Write your code here
-function multiply(a, b) { //eslint-disable-line
-let prdct=a*b;
-let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
-return arr2;   
-}
-
+// // Write your code here
+// function multiply(a, b) { //eslint-disable-line
+// let prdct=a*b;
+// let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
+// return arr2;   
+// }
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -52,7 +51,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+let sum=a+b+c;
+let prdct=a*b*c;
+let arr3=[sum,' The sum of ' + a + ' and ' + b +' and ' + c +' is ' + sum ,prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
+return arr3;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
