@@ -8,12 +8,13 @@ zz
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-// function sum(a, b) { //eslint-disable-line
-//     let sum=a+b;
-//     let arr1=[sum,' The sum of ' + a + ' and ' + b +' is ' + sum];
-//     return(arr1);
-//     }
+function sum(a, b) { //eslint-disable-line
+    let sum=a+b;
+    let arr1=[sum,' The sum of ' + a + ' and ' + b +' is ' + sum];
+    return(arr1);
+    }
     
+
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -29,11 +30,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-let prdct=a*b;
-let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
-return arr2;   
-}
-
+    let prdct=a*b;
+    let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
+    return arr2;   
+    }
+    
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
