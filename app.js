@@ -137,10 +137,16 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-
+let n= parseInt(prompt('please enter the length of the arrays'));
+var testDynamicArray = [n]; //eslint-disable-line
+let p=1;
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+for (let i=0;i<n;i++){
+    testDynamicArray[i]=parseInt(prompt('please enter the elments of the array'));
+    p=p*testDynamicArray[i];
+}
+let arry6=['The numbers '+ testDynamicArray + ' have a product of '+p];
+return arry6;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
