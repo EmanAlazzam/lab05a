@@ -11,6 +11,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
     let sum=a+b;
     let arr1=[sum,' The sum of ' + a + ' and ' + b +' is ' + sum];
+    console.log(arr1);
     return(arr1);
     }
     
@@ -30,11 +31,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // // Write your code here
 function multiply(a, b) { //eslint-disable-line
+let prdct=a*b;
+let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
+console.log(arr2);
+return arr2;   
 
-    let prdct=a*b;
-    let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
-    return arr2;   
-    }
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -56,6 +57,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
 let sum=a+b+c;
 let prdct=a*b*c;
 let arr3=[sum,' The sum of ' + a + ' and ' + b +' and ' + c +' is ' + sum ,prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
+console.log(arr3);
 return arr3;
 }
 
@@ -76,11 +78,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
-
+let sum=0;
 function sumArray(sumArr) { //eslint-disable-line
-
+for (let i=1; i<4;i++){
+    sum=sum+testArray[i];
 }
-
+let arry4=[testArray[0],testArray[1],testArray[2],'was passed in as an array of numbers, and '+sum+' is their sum.'];
+console.log(arry4);
+return arry4;
+}
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
@@ -98,8 +104,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+let prdct2=1;
+let testArray1=[];
 function multiplyArray(multArr) { //eslint-disable-line
-
+for (let i=1; i<4;i++){
+    testArray1[i]=parseInt(prompt('enter your number'));
+    prdct2=prdct2+[i];
+}
+let arry5=['The numbers '+testArray1[0],testArray1[1],testArray1[2],' have a product of '+prdct2];
+console.log(arry5);
+return arry5;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -124,10 +138,16 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-
+let n= parseInt(prompt('please enter the length of the arrays'));
+var testDynamicArray = [n]; //eslint-disable-line
+let p=1;
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-
+for (let i=0;i<n;i++){
+    testDynamicArray[i]=parseInt(prompt('please enter the elments of the array'));
+    p=p*testDynamicArray[i];
+}
+let arry6=['The numbers '+ testDynamicArray + ' have a product of '+p];
+return arry6;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
