@@ -15,6 +15,7 @@ function sum(a, b) { //eslint-disable-line
     return(arr1);
     }
     
+
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
 
@@ -34,7 +35,7 @@ let prdct=a*b;
 let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
 console.log(arr2);
 return arr2;   
-}
+
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
@@ -44,7 +45,7 @@ return arr2;
 /* Problem 3
 Write a function called sumAndMultiply() that takes in three numbers as separate arguments and returns an array where the first element is the sum of those three numbers, the second element is the product of those three numbers,  and the third and fourth elements are strings that EXACTLY follow this example and use the values that were input into the function:
 
-Third element: "4 and 7 and 5 sum to 16."
+Third element:"4 and 7 and 5 sum to 16."
 Fourth element: "The product of 4 and 7 and 5 is 140."
 
 IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this function. To do addition, use your sum() function, and to do multiplication, use your multiply() function that you've already created. You're going to have to be resourceful to figure out how to do this. However, you may continue to use the + operator for string concatenation.
