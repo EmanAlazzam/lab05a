@@ -8,16 +8,14 @@ zz
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
+function testSum(a, b) { //eslint-disable-line
     let sum=a+b;
     let arr1=[sum,' The sum of ' + a + ' and ' + b +' is ' + sum];
     console.log(arr1);
     return(arr1);
     }
-    
-
 // Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -30,14 +28,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // // Write your code here
-function multiply(a, b) { //eslint-disable-line
+function testMultiply(a, b) { //eslint-disable-line
 let prdct=a*b;
 let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
 console.log(arr2);
 return arr2;   
-
+}
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -62,7 +60,7 @@ return arr3;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -77,19 +75,18 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
 let sum=0;
-function sumArray(sumArr) { //eslint-disable-line
-for (let i=1; i<4;i++){
-    sum=sum+testArray[i];
+function testSumArray(sumArr) { //eslint-disable-line
+for (let i=0; i<3;i++){
+    sum=sum+sumArr[i];
 }
-let arry4=[testArray[0],testArray[1],testArray[2],'was passed in as an array of numbers, and '+sum+' is their sum.'];
+let arry4=[sumArr+ 'was passed in as an array of numbers, and '+sum+' is their sum.'];
 console.log(arry4);
 return arry4;
 }
 // Here is the test for sumArray(); uncomment it to run it
-
-// testSumArray(testArray);
+let sumArr = [2,3,4]; //eslint-disable-line
+testSumArray(sumArr);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -105,19 +102,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let prdct2=1;
-let testArray1=[];
 function multiplyArray(multArr) { //eslint-disable-line
-for (let i=1; i<4;i++){
-    testArray1[i]=parseInt(prompt('enter your number'));
-    prdct2=prdct2+[i];
+for (let i=0; i<3;i++){
+   let enterArry=prompt('enter your number for the array');
+   multArr[i]=parseInt(enterArry);
+   prdct2=prdct2*multArr[i];
 }
-let arry5=['The numbers '+testArray1[0],testArray1[1],testArray1[2],' have a product of '+prdct2];
+let arry5=['The numbers ' + multArr + ' have a product of ' + prdct2];
 console.log(arry5);
 return arry5;
 }
-
+let multArr=[];
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+multiplyArray(multArr);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -139,9 +136,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let n= parseInt(prompt('please enter the length of the arrays'));
-var testDynamicArray = [n]; //eslint-disable-line
+let testDynamicArray = [n]; //eslint-disable-line
 let p=1;
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+function multiplyAnyArray(testDynamicArray) { //eslint-disable-line
 for (let i=0;i<n;i++){
     testDynamicArray[i]=parseInt(prompt('please enter the elments of the array'));
     p=p*testDynamicArray[i];
@@ -151,6 +148,6 @@ return arry6;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
