@@ -51,7 +51,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+function testSumAndMultiply(a, b, c) { //eslint-disable-line
 let sum=a+b+c;
 let prdct=a*b*c;
 let arr3=[sum,' The sum of ' + a + ' and ' + b +' and ' + c +' is ' + sum ,prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
@@ -102,9 +102,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let prdct2=1;
-function multiplyArray(multArr) { //eslint-disable-line
+function testMultiplyArray(multArr) { //eslint-disable-line
 for (let i=0; i<3;i++){
-   let enterArry=prompt('enter your number for the array');
+   let enterArry=prompt('enter your number for the array for problem 5');
    multArr[i]=parseInt(enterArry);
    prdct2=prdct2*multArr[i];
 }
@@ -114,7 +114,7 @@ return arry5;
 }
 let multArr=[];
 // Here is the test for multiplyArray(); uncomment it to run it
-multiplyArray(multArr);
+testMultiplyArray(multArr);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -135,10 +135,10 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-let n= parseInt(prompt('please enter the length of the arrays'));
+let n= parseInt(prompt('choose the length of the arrays problem 6'));
 let testDynamicArray = [n]; //eslint-disable-line
 let p=1;
-function multiplyAnyArray(testDynamicArray) { //eslint-disable-line
+function testMultiplyAnyArray(testDynamicArray) { //eslint-disable-line
 for (let i=0;i<n;i++){
     testDynamicArray[i]=parseInt(prompt('please enter the elments of the array'));
     p=p*testDynamicArray[i];
