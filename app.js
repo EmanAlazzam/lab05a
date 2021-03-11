@@ -8,7 +8,7 @@ zz
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function testSum(a, b) { //eslint-disable-line
+function sum(a, b) { //eslint-disable-line
     let sum=a+b;
     let arr1=[sum,' The sum of ' + a + ' and ' + b +' is ' + sum];
     console.log(arr1);
@@ -28,7 +28,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // // Write your code here
-function testMultiply(a, b) { //eslint-disable-line
+function multiply(a, b) { //eslint-disable-line
 let prdct=a*b;
 let arr2=[prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
 console.log(arr2);
@@ -51,7 +51,7 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function testSumAndMultiply(a, b, c) { //eslint-disable-line
+function sumAndMultiply(a, b, c) { //eslint-disable-line
 let sum=a+b+c;
 let prdct=a*b*c;
 let arr3=[sum,' The sum of ' + a + ' and ' + b +' and ' + c +' is ' + sum ,prdct,' The multiplication of ' + a + ' and ' + b +' is ' + prdct];
@@ -76,7 +76,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let sum=0;
-function testSumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { //eslint-disable-line
 for (let i=0; i<3;i++){
     sum=sum+sumArr[i];
 }
@@ -102,7 +102,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 let prdct2=1;
-function testMultiplyArray(multArr) { //eslint-disable-line
+function multiplyArray(multArr) { //eslint-disable-line
 for (let i=0; i<3;i++){
    let enterArry=prompt('enter your number for the array for problem 5');
    multArr[i]=parseInt(enterArry);
@@ -113,7 +113,8 @@ console.log(arry5);
 return arry5;
 }
 let multArr=[];
-// Here is the test for multiplyArray(); uncomment it to run it
+
+//Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(multArr);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
@@ -144,6 +145,7 @@ for (let i=0;i<n;i++){
     p=p*testDynamicArray[i];
 }
 let arry6=['The numbers '+ testDynamicArray + ' have a product of '+p];
+console.log(arry6);
 return arry6;
 }
 
